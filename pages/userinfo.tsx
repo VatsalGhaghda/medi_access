@@ -16,10 +16,11 @@ interface User {
     emergencyNumber: string;
   }
   
-  const [user, setUser] = useState<User | null>(null);  // Use the 'User' type
+  
   
 
 export default function UserInfo() {
+    const [user, setUser] = useState<User | null>(null);  // Use the 'User' type
 //   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
