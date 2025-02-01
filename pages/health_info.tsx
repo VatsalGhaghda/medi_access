@@ -83,7 +83,7 @@ const HealthInfoForm: NextPage = () => {
           />
         </div>
         <div>
-          <label>Primary Doctor's Name</label>
+          <label>Primary Doctor Name</label>
           <input
             type="text"
             name="primaryDoctorName"
@@ -92,7 +92,7 @@ const HealthInfoForm: NextPage = () => {
           />
         </div>
         <div>
-          <label>Primary Doctor's Contact</label>
+          <label>Primary Doctor Contact</label>
           <input
             type="text"
             name="primaryDoctorContact"

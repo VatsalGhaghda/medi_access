@@ -3,8 +3,24 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import QRCode from "react-qr-code";
 
+interface User {
+    firstName: string;
+    middleName: string;
+    lastName: string;
+    dob: string;
+    gender: string;
+    bloodGroup: string;
+    address: string;
+    email: string;
+    phoneNumber: string;
+    emergencyNumber: string;
+  }
+  
+  const [user, setUser] = useState<User | null>(null);  // Use the 'User' type
+  
+
 export default function UserInfo() {
-  const [user, setUser] = useState<any>(null);
+//   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
   const { email } = router.query;
