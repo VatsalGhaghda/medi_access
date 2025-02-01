@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { PrismaClient } from "@prisma/client";
+// import { PrismaClient } from "@prisma/client";
 import { NextPage } from "next";
 
 // Initialize Prisma Client
-const prisma = new PrismaClient();
+// const prisma = new PrismaClient();
 
 const HealthInfoForm: NextPage = () => {
   const [formData, setFormData] = useState({
